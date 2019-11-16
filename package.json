@@ -1,0 +1,24 @@
+{
+  "name": "@rynz/node-test-app",
+  "version": "0.0.1-alpha",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "jest --colors",
+    "test:coverage": "jest --coverage",
+    "test:debug": "node --inspect-brk node_modules/.bin/jest --runInBand",
+    "test:watch": "jest --watch",
+    "lint": "eslint src",
+    "format": "prettier --write \"**/*.+(js|json|md|ts|vue|yml)\"",
+    "validate": "npm run lint && npm run test"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1"
+  },
+  "dependencies": {
+    "@rynz/node-test-protocol": "^1.0.0"
+  }
+}
